@@ -4,3 +4,4 @@
 - [2018-01-25]: perf: use buffered channels to reduce blocking
 - [2018-02-01]: feat: implement graceful shutdown with signal handling
 - [2018-02-20]: chore: add Makefile targets for build and test
+- [2018-02-25]: feat: add gRPC health check protocol support
