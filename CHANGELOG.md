@@ -8,3 +8,4 @@
 - [2018-03-08]: chore: update go.mod to Go 1.21 and tidy dependencies
 - [2018-03-22]: feat: implement exponential backoff for retries
 - [2018-03-23]: fix: resolve goroutine leak in connection pool
+- [2018-03-23]: fix: handle context cancellation in long-running tasks
