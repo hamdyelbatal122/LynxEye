@@ -11,3 +11,4 @@
 - [2018-03-23]: fix: handle context cancellation in long-running tasks
 - [2018-03-26]: feat: add Prometheus metrics instrumentation
 - [2018-04-04]: perf: reduce allocations in hot path with sync.Pool
+- [2018-04-11]: refactor: replace global state with dependency injection
