@@ -12,3 +12,4 @@
 - [2018-03-26]: feat: add Prometheus metrics instrumentation
 - [2018-04-04]: perf: reduce allocations in hot path with sync.Pool
 - [2018-04-11]: refactor: replace global state with dependency injection
+- [2018-04-19]: fix: correct JSON unmarshaling for optional fields
