@@ -16,3 +16,4 @@
 - [2018-04-25]: fix: resolve data race detected by race detector
 - [2018-05-03]: refactor: extract middleware into separate package
 - [2018-05-11]: docs: add GoDoc comments to exported functions
+- [2018-05-21]: feat: add structured logging with zerolog
