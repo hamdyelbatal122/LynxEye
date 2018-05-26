@@ -18,3 +18,4 @@
 - [2018-05-11]: docs: add GoDoc comments to exported functions
 - [2018-05-21]: feat: add structured logging with zerolog
 - [2018-05-23]: refactor: replace error strings with typed sentinel errors
+- [2018-05-26]: fix: sanitize user input before shell execution
