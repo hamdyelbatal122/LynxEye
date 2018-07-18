@@ -21,3 +21,4 @@
 - [2018-05-26]: fix: sanitize user input before shell execution
 - [2018-06-25]: refactor: consolidate configuration parsing into config package
 - [2018-07-02]: chore: add integration tests for database layer
+- [2018-07-18]: refactor: separate transport layer from business logic
