@@ -23,3 +23,4 @@
 - [2018-07-02]: chore: add integration tests for database layer
 - [2018-07-18]: refactor: separate transport layer from business logic
 - [2018-08-26]: feat: add distributed tracing with OpenTelemetry
+- [2018-08-29]: fix: correct integer overflow in metric accumulator
