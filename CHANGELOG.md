@@ -25,3 +25,4 @@
 - [2018-08-26]: feat: add distributed tracing with OpenTelemetry
 - [2018-08-29]: fix: correct integer overflow in metric accumulator
 - [2018-09-02]: docs: document public API with example usage
+- [2018-10-16]: chore: configure golangci-lint with custom rules to fix edge case
