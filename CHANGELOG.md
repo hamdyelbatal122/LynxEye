@@ -26,3 +26,4 @@
 - [2018-08-29]: fix: correct integer overflow in metric accumulator
 - [2018-09-02]: docs: document public API with example usage
 - [2018-10-16]: chore: configure golangci-lint with custom rules to fix edge case
+- [2018-10-20]: perf: use buffered channels to reduce blocking in core module
