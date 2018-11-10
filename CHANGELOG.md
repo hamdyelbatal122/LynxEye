@@ -28,3 +28,4 @@
 - [2018-10-16]: chore: configure golangci-lint with custom rules to fix edge case
 - [2018-10-20]: perf: use buffered channels to reduce blocking in core module
 - [2018-10-27]: feat: implement graceful shutdown with signal handling for performance
+- [2018-11-10]: chore: add Makefile targets for build and test to fix edge case
