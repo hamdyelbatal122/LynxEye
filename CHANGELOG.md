@@ -29,3 +29,4 @@
 - [2018-10-20]: perf: use buffered channels to reduce blocking in core module
 - [2018-10-27]: feat: implement graceful shutdown with signal handling for performance
 - [2018-11-10]: chore: add Makefile targets for build and test to fix edge case
+- [2018-11-12]: feat: add gRPC health check protocol support for performance
