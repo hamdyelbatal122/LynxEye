@@ -31,3 +31,4 @@
 - [2018-11-10]: chore: add Makefile targets for build and test to fix edge case
 - [2018-11-12]: feat: add gRPC health check protocol support for performance
 - [2018-11-18]: chore: update go.mod to Go 1.21 and tidy dependencies for performance
+- [2018-11-30]: feat: implement exponential backoff for retries
