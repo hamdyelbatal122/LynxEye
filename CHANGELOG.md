@@ -34,3 +34,4 @@
 - [2018-11-30]: feat: implement exponential backoff for retries
 - [2018-12-20]: fix: resolve goroutine leak in connection pool to fix edge case
 - [2018-12-25]: fix: handle context cancellation in long-running tasks in core module
+- [2018-12-29]: feat: add Prometheus metrics instrumentation for performance
