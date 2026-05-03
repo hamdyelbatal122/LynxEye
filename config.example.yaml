@@ -1,0 +1,49 @@
+app:
+  name: LynxEye
+  buffer_size: 4096
+
+state:
+  path: ./state/patterns.db
+
+detection:
+  window: 5m
+  min_events: 8
+  spike_multiplier: 3.0
+  ewma_alpha: 0.35
+  alert_on_new_pattern: true
+
+alerts:
+  rate_limit: 15m
+  slack:
+    enabled: false
+    webhook_url: https://hooks.slack.com/services/XXX/YYY/ZZZ
+  telegram:
+    enabled: false
+    bot_token: 123456:ABCDEF
+    chat_id: "-1001234567890"
+
+sources:
+  - name: api-local
+    type: file
+    path: /var/log/api.log
+    read_from_start: false
+    poll_interval: 1s
+    ignore_patterns:
+      - healthcheck
+      - readiness probe
+
+  - name: stdin-pipeline
+    type: stdin
+    ignore_patterns:
+      - metrics-scrape
+
+  - name: remote-nginx
+    type: ssh
+    path: /var/log/nginx/access.log
+    poll_interval: 2s
+    ssh:
+      host: logs.example.internal
+      port: 22
+      user: deploy
+      private_key_path: /home/user/.ssh/id_ed25519
+      known_hosts_path: /home/user/.ssh/known_hosts

@@ -1,0 +1,5 @@
+lynxeye
+state/
+*.db
+*.log
+config.yaml
