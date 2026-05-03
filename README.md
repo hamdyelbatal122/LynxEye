@@ -63,9 +63,37 @@ flowchart LR
 └── README.md
 ```
 
+## Installation
+
+### One-liner (Linux & macOS)
+
+```bash
+curl -sSL https://raw.githubusercontent.com/hamdyelbatal122/LynxEye/main/install.sh | bash
+```
+
+The script will:
+- Auto-detect your OS and CPU architecture
+- Download the latest release binary from GitHub
+- Verify the SHA-256 checksum
+- Install `lynxeye` to `/usr/local/bin`
+
+### Manual download
+
+Pre-built binaries for Linux, macOS, and Windows are available on the [Releases page](https://github.com/hamdyelbatal122/LynxEye/releases).
+
+### Build from source
+
+```bash
+git clone https://github.com/hamdyelbatal122/LynxEye.git
+cd LynxEye
+go build ./cmd/lynxeye
+```
+
+---
+
 ## Quick Start
 
-### Build
+### Build from source
 
 ```bash
 go build ./cmd/lynxeye
