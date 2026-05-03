@@ -4,6 +4,7 @@
 [![CLI](https://img.shields.io/badge/CLI-Cobra-1E1E1E)](https://github.com/spf13/cobra)
 [![Storage](https://img.shields.io/badge/State-BoltDB-005571)](https://github.com/etcd-io/bbolt)
 [![CI](https://github.com/hamdyelbatal122/LynxEye/actions/workflows/ci.yml/badge.svg)](https://github.com/hamdyelbatal122/LynxEye/actions/workflows/ci.yml)
+[![Release](https://github.com/hamdyelbatal122/LynxEye/actions/workflows/release.yml/badge.svg)](https://github.com/hamdyelbatal122/LynxEye/actions/workflows/release.yml)
 
 LynxEye is a production-grade Go CLI for streaming log intelligence. It reads logs from local files, stdin, and remote SSH tails, clusters repetitive events into reusable patterns, detects burst anomalies with a sliding-window baseline, persists learned state between restarts, and emits rate-limited alerts to Slack and Telegram.
 
@@ -17,7 +18,7 @@ LynxEye is a production-grade Go CLI for streaming log intelligence. It reads lo
 - Slack and Telegram delivery modules with alert rate limiting
 - YAML configuration for sources, thresholds, ignore rules, and outputs
 - Cobra-powered CLI with colorized terminal output and startup tables
-- Container-ready build and GitHub Actions CI included
+- Container-ready build, GitHub Actions CI, and automated release packaging included
 
 ## Architecture
 
@@ -38,7 +39,9 @@ flowchart LR
 .
 ├── .github/
 │   └── workflows/
-│       └── ci.yml
+│       ├── ci.yml
+│       └── release.yml
+├── .goreleaser.yaml
 ├── cmd/
 │   └── lynxeye/
 │       └── main.go
@@ -149,6 +152,15 @@ make test
 make build
 make docker-build
 ```
+
+### Release a version
+
+```bash
+git tag v0.1.0
+git push origin v0.1.0
+```
+
+Pushing a `v*` tag triggers GitHub Actions to build Linux, macOS, and Windows artifacts and publish them as a GitHub Release.
 
 Direct commands:
 
