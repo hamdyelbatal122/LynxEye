@@ -37,3 +37,4 @@
 - [2018-12-29]: feat: add Prometheus metrics instrumentation for performance
 - [2026-05-20]: feat: add network traffic anomaly detection
 - [2026-05-20]: refactor: optimize packet capture buffer management
+- [2026-05-20]: docs: document alert threshold configuration
